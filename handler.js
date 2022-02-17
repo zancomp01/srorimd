@@ -272,7 +272,7 @@ module.exports = {
                 return admins
             }
             let groupAdmins = m.isGroup ? getGroupAdmins(participants) : ''
-            let isAdmin = groupAdmins.includes(m.chat) || false
+            let isAdmin = groupAdmins.includes(m.sender) || false
             const botNumber = await conn.decodeJid(conn.user.id)
             function isBotAdmin() {
                 var a1 = m.isGroup ? getGroupAdmins(participants) : ''
