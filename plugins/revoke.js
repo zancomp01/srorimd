@@ -1,6 +1,6 @@
 let handler = async (m, { conn }) => {
   let res = await conn.groupRevokeInvite(m.chat)
-  conn.reply(m.sender, 'https://chat.whatsapp.com/' + res.code, m)
+  conn.reply(m.sender, 'https://chat.whatsapp.com/' + res, m)
 }
 handler.help = ['revoke']
 handler.tags = ['group']
