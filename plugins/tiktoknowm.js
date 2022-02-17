@@ -6,8 +6,8 @@ let handler = async (m, { conn }) => {
   conn.sendFile(m.chat, api.nowm, '.mp4', wm, m)
 }
 
-handler.command = /^(tiktoknowm)$/i
-handler.help = ['tiktokwm']
+handler.help = ['tiktoknowm']
 handler.tags = ['downloader']
+handler.command = /^tiktoknowm$/i
 
 module.exports = handler
